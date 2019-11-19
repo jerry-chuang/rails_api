@@ -1,4 +1,5 @@
 class SeekersController < ApplicationController
+  # before_action :authenticate_user!
   def index
     @seekers = Seeker.all 
     render json: @seekers, status: :ok
